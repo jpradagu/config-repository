@@ -4,8 +4,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8091/eureka/
-    healthcheck:
-      enabled: true
 management:
   endpoints:
     web:
