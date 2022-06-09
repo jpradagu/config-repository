@@ -15,8 +15,13 @@ spring:
       - id: productdomain
         uri: http://localhost:8083/
         predicates:
-        - Path=/api/**
+        - Path=/api/product/**
       - id: transactiondomain
         uri: http://localhost:8084/
         predicates:
         - Path=/api/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
