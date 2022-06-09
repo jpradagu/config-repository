@@ -15,4 +15,6 @@ spring:
       database: customerDomain
       uri: mongodb://localhost:27017/customerDomain
       auto-index-creation: true
+gateway:
+  uri: http://localhost:8080
 

@@ -13,3 +13,5 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/transactionDomain
+gateway:
+  uri: http://localhost:8080
