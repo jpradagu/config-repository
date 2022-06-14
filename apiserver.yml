@@ -7,19 +7,22 @@ eureka:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
       - id: customerdomain
-        uri: http://localhost:8082/
+        uri: lb://customerdomain/
         predicates:
-        - Path=/api/**
+        - Path=/api/customer/**
       - id: productdomain
-        uri: http://localhost:8083/
+        uri: lb://productdomain/
         predicates:
         - Path=/api/product/**
       - id: transactiondomain
-        uri: http://localhost:8084/
+        uri: lb://transactiondomain/
         predicates:
-        - Path=/api/**
+        - Path=/api/transaction/**
 management:
   endpoints:
     web:
