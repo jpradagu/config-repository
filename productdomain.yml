@@ -13,5 +13,3 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/productDomain
-gateway:
-  uri: http://localhost:8080
