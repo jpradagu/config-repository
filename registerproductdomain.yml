@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 8084
 eureka:
   client:
     serviceUrl:
@@ -12,4 +12,4 @@ management:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bankAccountTransactionDomain
+      uri: mongodb://localhost:27017/registerProductDomain
