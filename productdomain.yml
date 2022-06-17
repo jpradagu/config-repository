@@ -13,15 +13,3 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/productDomain
-
-maintenance:
-  fee:
-    savings: -1
-    checkingAccount: 0.05
-    fixedTerm: -1
-monthly:
-  commission:
-    limit:
-      savings: 5
-      checkingAccount: -1
-      fixedTerm: 1
