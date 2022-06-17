@@ -10,8 +10,3 @@ eureka:
         serviceUrl:
             defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     renewalPercentThreshold: 0:85
-#management:
-#    endpoints:
-#        web:
-#            exposure:
-#                include: *
