@@ -23,6 +23,10 @@ spring:
         uri: lb://registerproduct/
         predicates:
         - Path=/api/register/**
+      - id: transactiondomain
+        uri: lb://transactiondomain/
+        predicates:
+        - Path=/api/transaction/**
 management:
   endpoints:
     web:
