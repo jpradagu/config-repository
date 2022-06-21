@@ -20,7 +20,7 @@ spring:
         predicates:
         - Path=/api/product/**
       - id: registerproductdomain
-        uri: lb://registerproduct/
+        uri: lb://registerproductdomain/
         predicates:
         - Path=/api/register/**
       - id: transactiondomain
