@@ -11,22 +11,26 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: customerdomain
-        uri: lb://customerdomain/
-        predicates:
-        - Path=/api/customer/**
-      - id: productdomain
-        uri: lb://productdomain/
-        predicates:
-        - Path=/api/product/**
-      - id: registerproductdomain
-        uri: lb://registerproductdomain/
-        predicates:
-        - Path=/api/register/**
-      - id: transactiondomain
-        uri: lb://transactiondomain/
-        predicates:
-        - Path=/api/transaction/**
+        - id: customerdomain
+          uri: lb://customerdomain/
+          predicates:
+            - Path=/api/customer/**
+        - id: productdomain
+          uri: lb://productdomain/
+          predicates:
+            - Path=/api/product/**
+        - id: registerproductdomain
+          uri: lb://registerproductdomain/
+          predicates:
+            - Path=/api/register/**
+        - id: transactiondomain
+          uri: lb://transactiondomain/
+          predicates:
+            - Path=/api/transaction/**
+        - id: reporttransactiondomain
+          uri: lb://reporttransactiondomain/
+          predicates:
+            - Path=/api/report/**
 management:
   endpoints:
     web:
